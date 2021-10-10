@@ -8,25 +8,25 @@
   <!--bootstrp  -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css">
-  <!-- font awesome -->
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
-    integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
-  <!-- google font -->  
+  <!-- google font -->
   <link href="https://fonts.googleapis.com/css2?family=Homemade+Apple&display=swap" rel="stylesheet">
-  <!-- jquery --> 
+  <!-- jquery -->
   <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
   <!-- favicon -->
-  <link rel="icon" type="image/png" href="./assets/images/lion.ico" />
+  <link rel="icon" type="image/png" href="./assets/images/lion.ico" sizes="36x36" />
   <!-- style sheet -->
   <link rel="stylesheet" href="./assets/css/style.css" />
-  
+
   <title>Daily Scheduler</title>
 </head>
+<nav>
+  <button class="clear">Reset</button>
+</nav>
 
 <body>
+  <!-- <audio src="./assets/images/99879__tim-kahn__good-morning.wav" class="morning-audio"></audio> -->
+  <!-- <audio src="./assets/images/99877__tim-kahn__good-afternoon.wav" class="afternoon-audio"></audio> -->
   <!-- Jumbotron -->
-  <audio src="./assets/images/99879__tim-kahn__good-morning.wav"  class="morning-audio"></audio>
-  <audio src="./assets/images/99877__tim-kahn__good-afternoon.wav"  class="afternoon-audio"></audio>
   <header class="jumbotron">
     <h1 class="display-3">Daily Scheduler</h1>
     <!-- <p class="lead">A simple calendar app for scheduling your work day</p> -->
@@ -35,64 +35,88 @@
   </header>
   <!-- container for time blocks -->
   <div class="container">
-  <!-- 9am row -->
-  <!-- time square -->
-  <div id='9' class="row time-block">
-    <div class="col-sm-1 hour">9 am</div>
-    <!-- task or appointment text -->
-    <textarea class="col-sm-10 description"></textarea>
-    <!-- save button -->
-    <button class="col-sm-1 saveBtn btn"><i class="far fa-save fa-lg"></i></button>
+    <!-- time square -->
+    <!-- 9am row -->
+    <div id='9' class="row time-block">
+      <div class="col-sm-2 hour">9 am</div>
+      <!-- task or appointment text -->
+      <textarea class="col-sm-9 description"></textarea>
+      <!-- save button -->
+      <button class="col-sm-1 saveBtn btn"><img src="./assets/images/469918_disk_downloads_drawn_drive_floppy_icon.svg"
+          alt="Save"></button>
+    </div>
+    <hr>
+    <!--10am row -->
+    <div id="10" class="row time-block">
+      <div class="col-sm-2 hour">10 am</div>
+      <textarea class="col-sm-9 description"></textarea>
+      <button class="col-sm-1 saveBtn btn"><img src="./assets/images/469918_disk_downloads_drawn_drive_floppy_icon.svg"
+          alt="Save"></button>
+    </div>
+    <hr>
+    <!--11am row -->
+    <div id="11" class="row time-block">
+      <div class="col-sm-2 hour">11 am</div>
+      <textarea class="col-sm-9 description"></textarea>
+      <button class="col-sm-1 saveBtn btn"><img src="./assets/images/469918_disk_downloads_drawn_drive_floppy_icon.svg"
+          alt="Save"></button>
+    </div>
+    <hr>
+    <!-- 12pm row -->
+    <div id='12' class="row time-block">
+      <div class="col-sm-2 hour">12 pm</div>
+      <textarea class="col-sm-9 description"></textarea>
+      <button class="col-sm-1 saveBtn btn"><img src="./assets/images/469918_disk_downloads_drawn_drive_floppy_icon.svg"
+          alt="Save"></button>
+    </div>
+    <hr>
+    <!-- 1pm row -->
+    <div id="14" class="row time-block">
+      <div class="col-sm-2 hour">1 pm</div>
+      <textarea class="col-sm-9 description"></textarea>
+      <button class="col-sm-1 saveBtn btn"><img src="./assets/images/469918_disk_downloads_drawn_drive_floppy_icon.svg"
+          alt="Save"></button>
+    </div>
+
+    <hr>
+
+    <!-- 2pm row -->
+    <div id="14" class="row time-block">
+      <div class="col-sm-2 hour">2 pm</div>
+      <textarea class="col-sm-9 description"></textarea>
+      <button class="col-sm-1 saveBtn btn"><img src="./assets/images/469918_disk_downloads_drawn_drive_floppy_icon.svg"
+          alt="Save"></button>
+    </div>
+    <hr>
+    <!-- 3pm row -->
+    <div id="15" class="row time-block">
+      <div class="col-sm-2 hour">3 pm</div>
+      <textarea class="col-sm-9 description"></textarea>
+      <button class="col-sm-1 saveBtn btn"><img src="./assets/images/469918_disk_downloads_drawn_drive_floppy_icon.svg"
+          alt="Save"></button>
+    </div>
+    <hr>
+    <!-- 4pm row -->
+    <div id='16' class="row time-block">
+      <div class="col-sm-2 hour">4 pm</div>
+      <textarea class="col-sm-9 description"></textarea>
+      <button class="col-sm-1 saveBtn btn"><img src="./assets/images/469918_disk_downloads_drawn_drive_floppy_icon.svg"
+          alt="Save"></button>
+    </div>
+    <hr>
+    <!-- 5pm row -->
+    <div id='17' class="row time-block">
+      <div class="col-sm-2 hour">5 pm</div>
+      <textarea class="col-sm-9 description"></textarea>
+      <button class="col-sm-1 saveBtn btn"><img src="./assets/images/469918_disk_downloads_drawn_drive_floppy_icon.svg"
+          alt="Save"></button>
+    </div>
+    <hr>
   </div>
-   <!--10am row -->
-  <div id="10" class="row time-block">
-    <div class="col-sm-1 hour">10 am</div>
-    <textarea class="col-sm-10 description"></textarea>
-    <button class="col-sm-1 saveBtn btn"><i class="far fa-save fa-lg"></i></button>
   </div>
-   <!--11am row -->
-  <div id="11" class="row time-block">
-    <div class="col-sm-1 hour">11 am</div>
-    <textarea class="col-sm-10 description"></textarea>
-    <button class="col-sm-1 saveBtn btn"><i class="far fa-save fa-lg"></i></button>
-  </div>
-   <!-- 12pm row -->
-  <div id='12' class="row time-block">
-    <div class="col-sm-1 hour">12 pm</div>
-    <textarea class="col-sm-10 description"></textarea>
-    <button class="col-sm-1 saveBtn btn"><i class="far fa-save fa-lg"></i></button>
-  </div>
-   <!-- 1pm row -->
-  <div id="13" class="row time-block">
-    <div class="col-sm-1 hour">1 pm</div>
-    <textarea class="col-sm-10 description"></textarea>
-    <button class="col-sm-1 saveBtn btn"><i class="far fa-save fa-lg"></i></button>
-  </div>
-   <!-- 2pm row -->
-  <div id="14" class="row time-block">
-    <div class="col-sm-1 hour">2 pm</div>
-    <textarea class="col-sm-10 description"></textarea>
-    <button class="col-sm-1 saveBtn btn"><i class="far fa-save fa-lg"></i></button>
-  </div>
-   <!-- 3pm row -->
-  <div id="15" class="row time-block">
-    <div class="col-sm-1 hour">3 pm</div>
-    <textarea class="col-sm-10 description"></textarea>
-    <button class="col-sm-1 saveBtn btn"><i class="far fa-save fa-lg"></i></button>
-  </div>
-   <!-- 4pm row -->
-  <div id='16' class="row time-block">
-    <div class="col-sm-1 hour">4 pm</div>
-    <textarea class="col-sm-10 description"></textarea>
-    <button class="col-sm-1 saveBtn btn"><i class="far fa-save fa-lg"></i></button>
-  </div> <!-- 5pm row -->
-  <div id='17' class="row time-block">
-    <div class="col-sm-1 hour">5 pm</div>
-    <textarea class="col-sm-10 description"></textarea>
-    <button class="col-sm-1 saveBtn btn"><i class="far fa-save fa-lg"></i></button>
-  </div>
-  </div>
-</div>
+
+
+
 
   <!-- adding links to bootstrap, jquery, moments etc -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -102,6 +126,6 @@
   <script src="https://code.jquery.com/ui/1.12.0/jquery-ui.min.js"></script>
   <script src="script.js"></script>
 </body>
-</body>
+<footer><br></footer>
 
 </html>
