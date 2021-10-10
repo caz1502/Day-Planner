@@ -1,7 +1,3 @@
-window.onload=function(){
-  $('.morning-audio').play();
-}
-
 
 var timeDisplayEl = $('#currentDay')
 var button =$('.saveBtn')
@@ -25,13 +21,13 @@ function currentTime() {
 
 // this is the if statement that changes current hour
     if (hour === current) {
-      $(this).children('.col-sm-10').attr('class', 'present col-sm-10 description')
+      $(this).children('.col-sm-9').attr('class', 'present col-sm-9 description')
   // this is the if statement that changes past hour hour
     } else if (current > hour) {
-      $(this).children('.col-sm-10').attr('class', 'past col-sm-10 description')
+      $(this).children('.col-sm-9').attr('class', 'past col-sm-9 description')
   //  this is the if statement if the previous 2 statement are not met then this is the colour
     } else {
-      $(this).children('.col-sm-10').attr('class', 'future col-sm-10 description')
+      $(this).children('.col-sm-9').attr('class', 'future col-sm-9 description')
   
     }
   })
@@ -42,7 +38,7 @@ currentTime()
 
  button.on('click', function (event) {
   event.preventDefault();
-  var text = $(this).siblings('.col-sm-10').val().replace(/['"]+/g, '');
+  var text = $(this).siblings('.col-sm-9').val().replace(/['"]+/g, '');
   var parent = $(this).parent().attr('id');
   localStorage.setItem(parent, JSON.stringify(text));
 })
@@ -57,11 +53,7 @@ $('#13 textarea').val(localStorage.getItem('13').replace(/['"]+/g, ''));
 $('#14 textarea').val(localStorage.getItem('14').replace(/['"]+/g, ''));
 $('#15 textarea').val(localStorage.getItem('15').replace(/['"]+/g, ''));
 $('#16 textarea').val(localStorage.getItem('16').replace(/['"]+/g, ''));
-$('#17 textarea').val(localStorage.getItem('17')).replace(/['"]+/g, '');
-
-
-
-
+$('#17 textarea').val(localStorage.getItem('17').replace(/['"]+/g, ''));
 
 
 
