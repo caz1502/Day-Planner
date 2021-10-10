@@ -89,19 +89,14 @@ border-radius: 1em;
 
 /*===Button===*/
 .saveBtn {   
-  font-size:1.5em;
+  font-size:2em;
   display: flex;
   justify-content: center;
   align-items: center;      
 }
 
-img {
-  width: 3em;
-  height: 3em;
+.saveBtn:hover{
+  font-size:3em;
 }
 
-img:hover{
-  width: 6em;
-  height: 6em;
-}
 
