@@ -1,6 +1,22 @@
+ /*===Topography===*/
 
+ h1 {
+  letter-spacing: .2em;
+} 
 
-/* styling for body */
+p {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  padding-top: 2rem;
+}
+
+hr {
+  border: solid 1px black;
+  background-color: #000000;
+  height: 1px !important;
+  width: 100%;
+}
+
+/*===styling for body===*/
 body {
  
   font-size: 1em; 
@@ -12,103 +28,80 @@ body {
   background-size: cover;
 }
 
-/* jumbotron styling */
+/*===jumbotron styling===*/
 .jumbotron {
   text-align: center;
   background-color: transparent;
   color: black;  
- 
 }
 
-p {
-
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  padding-top: 2rem;
-
+ .jumbotron hr { 
+  border-top:1px dotted #000;
+   max-width: 80rem;
 }
-
-hr {
- 
-  border: solid 2px black;
-  background-color: #000000;
-  height: 2px !important;
-  max-width: 80rem;
-
-}
-
-/* task and appointment area */
-.description {
-  white-space: pre-wrap;
   
-}
+/*===task area===*/
 textarea {
   background: transparent; 
   resize: none;
   color: #000000;
   font-family: 'Homemade Apple', cursive;
-  font-size: 1.8em;
-  border: 1px dashed #000000;
-  
-
-  }
+  font-size: 1.8em; 
+  padding-top: 1rem;  
+  letter-spacing: .3em;
+}
 
 .time-block {
   text-align: center; 
-  display: flex;  
-
-}
+ }
 
 .row {
-  white-space: pre-wrap;
-  height: 10rem;
- 
+  height: 10rem;  
 }
 
-
 .hour {
-  color: #000000;
-  border: 1px dashed #000000;
+  color: #000000;  
   display: flex;
   justify-content: center;
   align-items: center;  
-  font-size: 1.2rem;
-  border-top-left-radius:  1rem;
-  border-bottom-left-radius:  1rem;
-  background-color: white;
+  font-size: 2em;
+  font-weight: bolder;
 }
 
+/*===colour for past, present and futore timing===*/
 .past {
-  background-color: #e9ffdb;
-  
+border-radius: 1em;
+  background-color: #E6DADA;
+  border:none;
 }
-
+  
 .present {
-  background-color: #F8B6B0;
-
- 
+  background-color: #A1FFCE;
+  border:none; 
+  border-radius: 1em;
 }
 
 .future {
-  background-color: #77dd77;
-
- 
+  background-color: aliceblue;
+  border:none; 
+  border-radius: 1em;
 }
 
-/* --------- Button----------- */
-.saveBtn { 
-  background-color: white;
-  font-size:1.5rem;
-  color: black; 
-  border: 1px dashed #000000;
-  border-top-right-radius:  1rem;
-  border-bottom-right-radius:  1rem;
-
+/*===Button===*/
+.saveBtn {   
+  font-size:1.5em;
+  display: flex;
+  justify-content: center;
+  align-items: center;      
 }
 
-.saveBtn i:hover {
-  font-size: 4rem;
-  transition: all 0.3s ease-in-out;
+img {
+  width: 3em;
+  height: 3em;
 }
 
+img:hover{
+  width: 6em;
+  height: 6em;
+}
 
-  
