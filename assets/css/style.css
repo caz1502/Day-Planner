@@ -1,13 +1,19 @@
  /*===Topography===*/
-
-
  h1 {
   letter-spacing: .2em;
 } 
 
-p {
+p,
+button {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   padding-top: 2rem;
+}
+
+button {
+  background-color: #ffffed; 
+  border-radius: 1em;
+  padding: 1rem;
+  font-size: 1.5em;
 }
 
 hr {
@@ -17,16 +23,18 @@ hr {
   width: 100%;
 }
 
+#currentDay {
+  font-size: 1.5em;
+}
+
 /*===styling for body===*/
 body {
   font-size: 1em;   
   font-family: 'Homemade Apple', cursive;
   background-image: url(../images/stockvault-white-crumpled-paper-texture255216.jpg);
-  background-size: cover; 
-  
+  background-size: cover;   
   margin-left: auto;
-  margin-right: auto;
-  
+  margin-right: auto;  
 }
 
 /*===jumbotron styling===*/

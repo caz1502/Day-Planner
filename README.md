@@ -29,7 +29,7 @@ WHEN I refresh the page
 THEN the saved events persist
 
 ## Website Image
-![Daily Planner](./assets/images/dailyPlanner.jpg)
+![Daily Planner](./assets/images/dailyPlanner.JPG)
 
 ## Authors, Acknowledgement, & Resources 🤝
 Teaching Crew at UniSA Coding Bootcamp 🎉

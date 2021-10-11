@@ -51,10 +51,11 @@ $('#16 textarea').val(localStorage.getItem('16'));
 $('#17 textarea').val(localStorage.getItem('17'));
 
 
-function deleteItems() {
-window.localStorage.clear();
-window.location.reload();
-}
 
- 
+//button to clear local storage and refresh the page
+$("#clear").click(function() {
+localStorage.clear();
+location.reload()
+});
   
+
